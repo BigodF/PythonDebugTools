@@ -1,10 +1,10 @@
 # Python Debug Tools
-These are some tools to debug python scripts. Now there is only one tools command: **generate module path of current file**
+There are some tools for debugging python scripts in this extension. Now there is only one tools command: **generate module path of the current file**
 
 ## Commonds
 ### 1. Generate Python Module
-Generate Python Module of current file path. When you need to need some python scripts as a module, you must add a configuration in launch.json, and set the *module* parameter to module path. When debugging many script, you must change the *module* parameter each time! That's suffering! 
+This commond returns a string of module path of the current python script file. When you need to debug a python script as module, you must add a configuration in launch.json, and set the *module* parameter to module path. When debugging many scripts, you must change the *module* parameter each time! That's suffering! 
 
-With this command, you just need to set the *module* parameter with "*{command:pythondebugtools.genModulePath}*", vscode will automatically debug the current script file as a module.
+With this command, you just set the *module* parameter with '*{command:pythondebugtools.genModulePath}*', and **VSCode** will automatically debug the current script file as a module.
 
 **Enjoy!**
