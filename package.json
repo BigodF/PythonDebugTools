@@ -1,0 +1,35 @@
+{
+  "name": "pythondebugtools",
+  "displayName": "PythonDebugTools",
+  "description": "python debug tools",
+  "version": "0.0.1",
+  "publisher": "Bigodf",
+  "repository": "https://github.com/BigodF/PythonDebugTools.git",
+  "engines": {
+    "vscode": "^1.85.2"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "pythondebugtools.genModulePath",
+      "title": "Generate Python Module"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.2",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
