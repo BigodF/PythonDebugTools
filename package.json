@@ -2,7 +2,7 @@
   "name": "pythondebugtools",
   "displayName": "Python Debug Tools",
   "description": "python debug tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Bigodf",
   "repository": "https://github.com/BigodF/PythonDebugTools.git",
   "engines": {
