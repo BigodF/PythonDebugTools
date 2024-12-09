@@ -40,12 +40,13 @@ function activate(context) {
 
             // 计算相对路径
             let relativePath = path.relative(workspaceRoot, filePath);
+			// filePath.search(path.extname(filePath))
 			// 去掉扩展名
             relativePath = relativePath.replace(path.extname(relativePath), '');
             // 替换 `\` 为 `.`
-            relativePath = relativePath.replace('/', '.');
+            relativePath = relativePath.replaceAll('/', '.');
 
-            // vscode.window.showInformationMessage(`相对路径: ${relativePath}`);
+            vscode.window.showInformationMessage(`相对路径: ${relativePath}, 绝对位置：${filePath}`);
             return relativePath; // 返回值
 		}
 	});
